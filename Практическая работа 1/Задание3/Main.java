@@ -1,14 +1,23 @@
-package Задание3;
+package com.company;
+import java.util.Scanner;
 public class Main {
-    public static void main (String[] args) {
-        if (args.length !=0) {
-            int a = Integer.parseInt(args[0]);
-            int b = Integer.parseInt(args[1]);
-            int c = a + b;
-            System.out.println(args[0] + " + " + args[1] + " = " + c);
-        } else {
-            System.out.println("Вы не передавали параметров");
-        }
 
+    public static void main(String[] args) {
+	Scanner num = new Scanner(System.in);
+    System.out.println("Введите 2 числа");
+    String ft, sd;
+    int res = 0;
+    ft = num.nextLine();
+    if (ft.equals("")) {
+        System.out.println("Не правильное кол-во значений");
+        System.exit(0);
+    }
+    sd = num.nextLine();
+    if (sd.equals("")){System.out.println("Не правильное кол-во значений"); System.exit(0);}
+
+    int first = Integer.parseInt(ft.trim());
+    int second = Integer.parseInt(sd.trim());
+    res = first + second;
+    System.out.println(ft + " + " + sd + " = " + res);
     }
 }
