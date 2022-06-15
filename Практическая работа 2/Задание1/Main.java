@@ -1,4 +1,4 @@
-public class NMaxElements {
+public class rab {
     public static final int N = 3;
     public static void main(String[] args) {
         int[] array = { 4, 2, 6, 3, 8, 9, 0, 1 };
