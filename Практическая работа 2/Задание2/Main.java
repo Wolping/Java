@@ -1,23 +1,25 @@
-package com.company;
-import java.util.Scanner;
-public class Main {
-
+public class rab {
     public static void main(String[] args) {
-        Scanner num = new Scanner(System.in);
-        System.out.println("Введите параметры");
-        int N = 0;
-        String num_1;
-        for (int i = 0; i < 4; i++) {
-            num_1 = num.nextLine();
-            if (!num_1.equals("")){
-                N += 1;
+        int n=10, j=0,m= 10;
+        int a[] = new int[n];
+        int b[] = new int[m];
+        System.out.println("massiv do: ");
+        for (int i=0; i<n; i++)
+        {
+            a[i] = (int) (Math.random() * 10);
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+            for (int i=0; i<m; i++) 
+            {
+                if (a[i] !=0)
+                {
+                    b[j] = a[i] / 3;
+                    j++;
+                }
             }
-        }
-        if (N == 0){
-            System.out.println("Вы не передавали параметров");
-        } else{
-            System.out.println("Вы  передали " + N + " параметра(ов)");
-        }
-
+            for (int i=0; i<j; i++)
+            System.out.print(b[i] + " ");
     }
 }
+//дан массив a n переписать в массив b m только положительные элементы массива a n делен на 3
