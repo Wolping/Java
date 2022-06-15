@@ -1,23 +1,24 @@
-package com.company;
-import java.util.Scanner;
-public class Main {
-
-    public static void main(String[] args) {
-	Scanner num = new Scanner(System.in);
-    System.out.println("Введите 2 числа");
-    String ft, sd;
-    int res = 0;
-    ft = num.nextLine();
-    if (ft.equals("")) {
-        System.out.println("Не правильное кол-во значений");
-        System.exit(0);
-    }
-    sd = num.nextLine();
-    if (sd.equals("")){System.out.println("Не правильное кол-во значений"); System.exit(0);}
-
-    int first = Integer.parseInt(ft.trim());
-    int second = Integer.parseInt(sd.trim());
-    res = first + second;
-    System.out.println(ft + " + " + sd + " = " + res);
+class MAXIMINDWUMER {
+    public static void main (String[] args){
+        int[][] a = new int[5][5];
+        int max, min;
+        Random rnd = new Random();
+        for (int i=0;i < a.length;i++) {
+            for (int j=0;j < a[i].length;j++) {
+                a[i][j]=rnd.nextInt(10) + 1;
+            }
+        }
+	int n=3;
+	int g;
+	int s=99990;
+        for (int j=0;j < a[i].length;j++) {
+		if (s > a[n][j]){
+		    s=a[n][j];
+		    g=j;
+		}
+                System.out.print(a[n][g]+" "+n+" "+g);
+        }
     }
 }
+
+//oпpeдeлить мaтpицy (двyмepный мaccив) и зaпoлнить ее cлyчaйными знaчeниями номер минимального значения в i столбце
