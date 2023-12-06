@@ -1,3 +1,0 @@
-interface Speakers {
-    void playSound();
-}
