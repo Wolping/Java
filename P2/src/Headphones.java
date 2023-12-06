@@ -1,0 +1,3 @@
+interface Headphones {
+    void playSound();
+}

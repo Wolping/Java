@@ -1,0 +1,3 @@
+interface Microphone {
+    void recordSound();
+}
